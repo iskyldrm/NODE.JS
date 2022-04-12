@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ana{
+            width: 400px;
+            height: 400px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- //<img src="" alt="" id="resim"><br> -->
+    <!-- <button onclick="document.getElementById('resim').src='images/images.jpg'">Kadir</button>
+    <button onclick="document.getElementById('resim').src='images/Kadir.webp'">Kadir</button>
+    <button onclick="document.getElementById('resim').src='images/maxresdefault.jpg'">Kadir</button> -->
+
+    <!-- <button onclick="ResimGetir('images/images.jpg')">Kadir</button>
+    <button onclick="ResimGetir('images/Kadir.webp')">kadir</button>
+    <button onclick="ResimGetir('images/maxresdefault.jpg')">kadir</button> -->
+
+    <!-- <select onchange="console.log('Degisti')">
+    
+        <option value="esk">EskiŞehir</option>
+        <option value="ist">İstanbul</option>
+        <option value="ank">Ankara</option>
+        <option value="dnz">Denizli</option>
+
+    </select>   -->
+
+    <div class="ana"  onmouseover="console.log('fare')" 
+    onmouseout="console.log('fare üzerinde çıktı')"></div>
+
+
+    <script>
+        function ResimGetir(imageName) 
+        {
+         const resim = document.getElementById("resim")   
+         resim.src = imageName;
+        }
+    </script>
+
+</body>
+</html>
