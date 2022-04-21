@@ -72,3 +72,36 @@ class Personel extends kisi
 
 var ali = new Personel("ali","Yilmaz","Ogretmen")
 console.log(ali)
+
+
+/*Metod Overriding */
+
+class Arac
+{
+    marka:string;
+    constructor(_marka:string)
+    {
+        this.marka = _marka;
+    }
+
+    HareketEt(hiz:number)
+    {
+        console.log(`${this.marka}, ${hiz} ile gidiyor`);
+    }
+}
+
+class Bmv extends Arac
+{
+    constructor(_marka:string)
+    {
+        super(_marka);
+    }
+    HareketEt(hiz: number) 
+    {
+        console.log("BMW hareket ediyor.")
+        super.HareketEt(hiz)    
+    }
+}
+
+let bmv = new Bmv("BMW")
+bmv.HareketEt(100);

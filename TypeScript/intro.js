@@ -47,3 +47,23 @@ console.log(renk);
 console.log("-----------------------");
 var xyz = "ali";
 xyz = 15;
+///* Union */************************************************************* */
+var code;
+code = 123;
+code = "ali";
+function displaycode(code) {
+    if (typeof (code) === "number") {
+        console.log("numberdır");
+    }
+    if (typeof (code) === "string") {
+        console.log("stringdir");
+    }
+}
+function UnionToplama(x, y) {
+    if (typeof (x) === "number" && typeof (y) === "number")
+        return x + y;
+    if (typeof (x) === "string" && typeof (y) === "string")
+        return x + y;
+}
+console.log(UnionToplama(3, 5));
+console.log(UnionToplama("3", "5"));
