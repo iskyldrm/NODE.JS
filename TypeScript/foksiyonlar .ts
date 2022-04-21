@@ -47,4 +47,11 @@ function tsTopla3(x:number,y:number,...digerleri:number[])
 tsTopla3(1,2,3,4,5)
 console.log("--------------------------")
 
+//Arrow Function
+
+
+let sumum = (x:number,y:number):number =>{return x+y;}
+
+console.log(sumum(6,8)) 
+
 

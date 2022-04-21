@@ -35,3 +35,6 @@ function tsTopla3(x, y) {
 }
 tsTopla3(1, 2, 3, 4, 5);
 console.log("--------------------------");
+//Arrow Function
+var sumum = function (x, y) { return x + y; };
+console.log(sumum(6, 8));
